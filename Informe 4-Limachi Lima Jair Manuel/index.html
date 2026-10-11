@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limachi Lima Jair Manuel</title>
+    <link rel="icon" href="https://picsum.photos" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="main-container">
+        <!-- Cabecera -->
+        <header class="site-header">
+            <div class="header-top">
+                <div class="logo-box">Logo</div>
+                <h1 class="company-name">Nombre de la empresa</h1>
+            </div>
+            <nav class="nav-bar">
+                <a href="#" class="nav-item">Opción 1</a>
+                <a href="#" class="nav-item">Opción 2</a>
+                <a href="#" class="nav-item">Opción 3</a>
+                <a href="#" class="nav-item">Opción 4</a>
+            </nav>
+        </header>
+
+        <!-- Slider -->
+        <section class="slider-section">
+            <div class="slider-container">
+                <div class="slide active">
+                    <img src="https://picsum.photos" alt="Slider 1">
+                </div>
+                <div class="slide">
+                    <img src="https://picsum.photos" alt="Slider 2">
+                </div>
+                <div class="slide">
+                    <img src="https://picsum.photos" alt="Slider 3">
+                </div>
+            </div>
+            <div class="slider-pagination">
+                <span class="dot active" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+        </section>
+
+        <!-- Contenido Principal -->
+        <section class="content-section">
+            <!-- Columna 1: Video de Youtube Corregido -->
+            <div class="content-col video-col">
+                <div class="video-responsive">
+                    <iframe src="https://youtube.com" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <!-- Columna 2: Texto descriptivo -->
+            <div class="content-col text-col">
+                <h2>Lorem Ipsum Dolor Sit Amet</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </section>
+
+        <!-- Sección de Bloques Inferiores (Publicidad y Registro) -->
+        <section class="bottom-section">
+            <!-- Bloque Publicidad (Se oculta en celulares) -->
+            <div class="pub-box">
+                <h3>PUBLICIDAD</h3>
+            </div>
+            
+            <!-- Formulario de Registro -->
+            <div class="form-box">
+                <h3>Regístrate</h3>
+                <form id="registroForm">
+                    <div class="input-group">
+                        <input type="text" id="nombre" placeholder="Nombre completo" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="correo" placeholder="Correo electrónico" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="tel" id="telefono" placeholder="Teléfono" required>
+                    </div>
+                    <button type="submit" class="btn-enviar">ENVIAR</button>
+                </form>
+                <div id="statusMessage"></div>
+            </div>
+        </section>
+
+        <!-- Pie de Página -->
+        <footer class="site-footer">
+            <div class="footer-copy">
+                <p>&copy; 2026 Limachi Lima Jair Manuel</p>
+                <p>Correo: <a href="mailto:tu-correo@senati.pe">tu-correo@senati.pe</a></p>
+                <p>Página web: Nombre de página web de su hosting público</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://linkedin.com" target="_blank" class="social-icon">in</a>
+                <a href="https://facebook.com" target="_blank" class="social-icon">f</a>
+                <a href="https://twitter.com" target="_blank" class="social-icon">t</a>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
